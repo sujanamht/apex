@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APEX Worldwide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+   
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      h2 {
+        font-family: "Content";
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- Top Bar -->
+    <div class="bg-[#38164d]">
+      <div
+        class="md:mx-20 text-white text-xs py-2 flex justify-center space-x-4 md:justify-between"
+      >
+        <div class="space-x-4">
+          <a href="mailto:info@apexparcel.com" class="  "
+            ><i class="fas fa-envelope"></i>
+            <span class="hidden md:inline ml-1"> info@apexparcel.com</span></a
+          >
+          <a href="tel:" class="  "
+            ><i class="fas fa-phone"></i>
+            <span class="hidden md:inline ml-1"> +977 9800000000</span></a
+          >
+          <a
+            href="https://maps.app.goo.gl/kBuSNp1KnFp49yAZA"
+            target="_blank"
+            class=" "
+            ><i class="fa-solid fa-location-dot"></i>
+            <span class="hidden md:inline ml-1"> Durbarmarg, Kathmandu</span>
+          </a>
+        </div>
+        <div class="space-x-4 -ml-20">
+          <a
+            href="https://www.facebook.com/"
+            class="rounded text-white hover:text-blue-400"
+          >
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="#" class="rounded text-white hover:text-blue-400"
+            ><i class="fab fa-linkedin fa-lg"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -------------------------------------------------- -->
+    <nav
+      class="mx-6 md:mx-20 relative py-3 flex justify-between items-center bg-white"
+    >
+      <a href="index.html">
+        <div
+          class="text-xl md:text-3xl py-2 font-semibold hover:text-[#E49210]"
+        >
+          <img
+            src="logo.png
+        "
+            class="h-16"
+            alt="logo"
+          /></div
+      ></a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-8 text-xl">
+        <li><a href="index.html" class="hover:text-[#E49210]">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#E49210]">About Us</a></li>
+        <li>
+          <a href=" service.html" class="hover:text-[#E49210]">Services</a>
+        </li>
+        <li><a href="contact.html" class="hover:text-[#E49210]">Contact</a></li>
+        <li><a href="contact.html" class="hover:text-[#E49210]">Login</a></li>
+      </ul>
+
+      <!-- Hamburger Menu for Small Screens -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-gray-800"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Pop-up Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed z-20 inset-0 bg-[#38164d] flex justify-center hidden"
+    >
+      <div class="bg-white p-6 my-16 w-4/5">
+        <button
+          id="close-menu"
+          class="absolute top-4 right-4 text-white text-5xl"
+        >
+          &times;
+        </button>
+        <ul class="space-y-6 text-xl font-bold">
+          <li>
+            <a href="index.html" class="block hover:text-[#E49210]">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="block hover:text-[#E49210]">About Us</a>
+          </li>
+          <li>
+            <a href=" service.html" class="block hover:text-[#E49210]"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="block hover:text-[#E49210]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="block hover:text-[#E49210]">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- about us ----------------------------------------------------- -->
+    <div
+      class="relative h-60 w-full bg-[url('./about.png')] bg-cover bg-center flex items-center justify-center"
+    >
+      <!-- Black Overlay -->
+      <div
+        class="absolute inset-0 bg-black bg-opacity-65 flex justify-center items-end"
+      >
+        <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-14 text-white">
+          OUR SERVICES
+        </h2>
+      </div>
+    </div>
+    <section class="mx-10 md:mx-20 my-12 space-y-16">
+      <!-- Air Freight -->
+      <div
+        class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10"
+      >
+        <img
+          src="./service-img/s1.jpg"
+          alt="Air Freight"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="md:w-1/2 text-left">
+          <h3 class="text-3xl font-semibold text-[#38164d] mb-4">
+            Air Freight
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            The most efficient way to move your goods. Our air freight services
+            ensure fast and reliable delivery for time-sensitive shipments.
+          </p>
+        </div>
+      </div>
+
+      <!-- Express Service (Reversed Layout) -->
+      <div
+        class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0 md:space-x-10"
+      >
+        <img
+          src="./service-img/s2.png"
+          alt="Express Service"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="md:w-1/2 text-left">
+          <h3 class="text-3xl font-semibold text-[#38164d] mb-4">
+            Express Service
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Worldwide delivery for urgent documents, parcels, and freight. We
+            offer reliable and fast logistics solutions across the globe.
+          </p>
+        </div>
+      </div>
+
+      <!-- Domestic Service -->
+      <div
+        class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10"
+      >
+        <img
+          src="./service-img/s3.png"
+          alt="Domestic Service"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="md:w-1/2 text-left">
+          <h3 class="text-3xl font-semibold text-[#38164d] mb-4">
+            Domestic Service
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Secure and cost-effective door-to-door delivery service within the
+            country, ensuring safe handling of your shipments.
+          </p>
+        </div>
+      </div>
+
+      <!-- Train Freight (Reversed Layout) -->
+      <div
+        class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0 md:space-x-10"
+      >
+        <img
+          src="./service-img/s4.jpg"
+          alt="Train Freight"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="md:w-1/2 text-left">
+          <h3 class="text-3xl font-semibold text-[#38164d] mb-4">
+            Train Freight
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Delivering the right solutions for your logistics needs with an
+            eco-friendly and cost-effective rail freight service.
+          </p>
+        </div>
+      </div>
+
+      <!-- Customs Clearance -->
+      <div
+        class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-10"
+      >
+        <img
+          src="./service-img/s5.jpg"
+          alt="Customs Clearance"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="md:w-1/2 text-left">
+          <h3 class="text-3xl font-semibold text-[#38164d] mb-4">
+            Customs Clearance
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Reliable customs clearance services to facilitate smooth and timely
+            delivery of international shipments.
+          </p>
+        </div>
+      </div>
+
+      <!-- Warehouse Solutions (Reversed Layout) -->
+      <div
+        class="flex flex-col md:flex-row-reverse items-center md:items-start space-y-6 md:space-y-0 md:space-x-10"
+      >
+        <img
+          src="./service-img/s6.jpg"
+          alt="Warehouse Solutions"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="md:w-1/2 text-left">
+          <h3 class="text-3xl font-semibold text-[#38164d] mb-4">
+            Warehouse Solutions
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            Free up your space with our secure and well-managed warehousing
+            services, providing inventory management solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
