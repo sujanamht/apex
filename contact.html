@@ -1,0 +1,291 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Worldwide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <style>
+      * {
+        font-family: "Inter Tight", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      h2 {
+        font-family: "Content";
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- Top Bar -->
+    <div class="bg-[#38164d]">
+      <div
+        class="md:mx-20 text-white text-xs py-2 flex justify-center space-x-4 md:justify-between"
+      >
+        <div class="space-x-4">
+          <a href="mailto:info@apexparcel.com" class="  "
+            ><i class="fas fa-envelope"></i>
+            <span class="hidden md:inline ml-1"> info@apexparcel.com</span></a
+          >
+          <a href="tel:" class="  "
+            ><i class="fas fa-phone"></i>
+            <span class="hidden md:inline ml-1"> +977 9800000000</span></a
+          >
+          <a
+            href="https://maps.app.goo.gl/kBuSNp1KnFp49yAZA"
+            target="_blank"
+            class=" "
+            ><i class="fa-solid fa-location-dot"></i>
+            <span class="hidden md:inline ml-1"> Durbarmarg, Kathmandu</span>
+          </a>
+        </div>
+        <div class="space-x-4 -ml-20">
+          <a
+            href="https://www.facebook.com/"
+            class="rounded text-white hover:text-blue-400"
+          >
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="#" class="rounded text-white hover:text-blue-400"
+            ><i class="fab fa-linkedin fa-lg"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -------------------------------------------------- -->
+    <nav
+      class="mx-6 md:mx-20 relative py-3 flex justify-between items-center bg-white"
+    >
+      <a href="index.html">
+        <div
+          class="text-xl md:text-3xl py-2 font-semibold hover:text-[#E49210]"
+        >
+          <img
+            src="logo.png
+            "
+            class="h-16"
+            alt="logo"
+          /></div
+      ></a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-8 text-xl">
+        <li><a href="index.html" class="hover:text-[#E49210]">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#E49210]">About Us</a></li>
+        <li><a href="blog.html" class="hover:text-[#E49210]">Services</a></li>
+        <li><a href="contact.html" class="hover:text-[#E49210]">Contact</a></li>
+        <li><a href="contact.html" class="hover:text-[#E49210]">Login</a></li>
+      </ul>
+
+      <!-- Hamburger Menu for Small Screens -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-gray-800"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- contact ------------------------------------------------------- -->
+    <div class="relative text-white mx-auto">
+      <div
+        class="relative bg-cover bg-center h-60 flex justify-center items-center"
+        style="background-image: url('./contact.jpg')"
+      >
+        <div
+          class="absolute inset-0 bg-black bg-opacity-75 flex justify-center items-end"
+        >
+          <h2 class="text-3xl md:text-5xl lg:text-7xl font-bold mb-14">
+            CONTACT US
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- info & form ------------------------------------------------------------------------ -->
+    <div class="py-5">
+      <div class="text-center py-12">
+        <h2 class="text-4xl font-bold mt-4">OUR PRESENCE</h2>
+        <!-- <p class="text-sm text-[#38164d]">We are always here to help.</p> -->
+      </div>
+      <div class="grid grid-cols-3 space-x-6 px-4 mx-20 py-10">
+        <div
+          class="border-r-2 border-gray-300 p-4 text-end rounded shadow hover:text-[#38164d]"
+        >
+          <h2 class="text-2xl font-semibold p-4">Kathmandu Branch</h2>
+          <div class="flex flex-col mt-8">
+            <div class="p-1 hover:text-[#38164d]">
+              <a href="https://maps.app.goo.gl/kBuSNp1KnFp49yAZA">
+                <text> Durbarmarg, Kathmandu</text
+                ><i
+                  class="fas fa-map-marker-alt text-3xl text-[#38164d] ml-8"
+                ></i
+              ></a>
+            </div>
+            <div class="p-1 hover:text-[#38164d]">
+              <a href="tel: ">
+                <text>+977 980000000</text
+                ><i class="fas fa-phone-alt text-3xl text-[#38164d] ml-8"></i
+              ></a>
+            </div>
+            <div class="p-1 hover:text-[#38164d]">
+              <a href="mailto:info@apexparcel.com">
+                <text>info@apexparcel.com</text
+                ><i class="fas fa-envelope text-3xl text-[#38164d] ml-8"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto text-center">
+          <!-- <h2 class="text-3xl font-bold text-[#38164d] mb-12">Our Presence</h2> -->
+          <div class="flex flex-col items-center space-y-3">
+            <!-- Nepal -->
+            <div class="p-1 border-2 rounded-xl items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg"
+                alt="Nepal Flag"
+                class="w-20 h-12 p-2"
+              />
+              <h3 class="text-lg font-semibold">Nepal</h3>
+            </div>
+
+            <!-- India -->
+            <div class="p-1 border-2 rounded-xl items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg"
+                alt="India Flag"
+                class="w-20 h-12 p-2"
+              />
+              <h3 class="textlg font-semibold">India</h3>
+            </div>
+
+            <!-- Singapore -->
+            <div class="p-1 border-2 rounded-xl items-center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"
+                alt="Singapore Flag"
+                class="w-20 h-12 p-2 mx-auto"
+              />
+              <h3 class="text-lg font-semibold">Singapore</h3>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-l-2 border-gray-300 p-4 text-start bg-white rounded shadow hover:text-[#38164d]"
+        >
+          <h2 class="text-2xl font-semibold p-4">Delhi Branch</h2>
+          <div class="flex flex-col mt-8">
+            <div class="p-1 hover:text-[#38164d]">
+              <a
+                href="https://maps.app.goo.gl/your-delhi-location-link"
+                class="flex justify-center items-center"
+              >
+                <i
+                  class="fas fa-map-marker-alt text-3xl text-[#38164d] mr-10"
+                ></i>
+                <text> Block Apex House, Mahipalpur, New Delhi </text>
+              </a>
+            </div>
+            <div class="p-1 hover:text-[#38164d]">
+              <a href="tel:+919311414207">
+                <i class="fas fa-phone text-3xl text-[#38164d] mr-6"></i>
+                <text>+91 9311414207</text>
+              </a>
+            </div>
+            <div class="p-1 hover:text-[#38164d]">
+              <a href="mailto:Awexpress.delhi@gmail.com">
+                <i class="fas fa-envelope text-3xl text-[#38164d] mr-6"></i>
+                <text>Awexpress.delhi@gmail.com</text>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-8 my-12 bg-[#38164d]/5">
+      <h2 class="text-4xl font-bold my-2">GET IN TOUCH!</h2>
+      <p class="text-sm text-[#38164d]">We are always here to help.</p>
+    </div>
+    <div class="grid grid-cols-2 space-x-8 m-20">
+      <!-- map --------------------------------------------- -->
+      <div class="w-full">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56514.15574550731!2d85.320131!3d27.713126000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1901934f8861%3A0xbc3c138e61533293!2sApex%20Worldwide%20Express%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1741134694075!5m2!1sen!2snp"
+          width="100%"
+          height="350"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="border border-gray-300 p-4 rounded shadow">
+        <div class="flex flex-col justify-stretch space-y-4">
+          <input
+            type="text"
+            class="w-full border border-gray-300 bg-transparent p-2 rounded"
+            placeholder="Your Name"
+          />
+          <div class="flex flex-row justify-evenly space-x-3">
+            <input
+              type="text"
+              class="w-full border border-gray-300 bg-transparent p-2 rounded"
+              placeholder="Phone number"
+            />
+
+            <input
+              type="text"
+              class="w-full border border-gray-300 bg-transparent p-2 rounded"
+              placeholder="Email Address"
+            />
+          </div>
+          <input
+            type="text"
+            class="border border-gray-300 bg-transparent p-2 rounded"
+            placeholder="Subject"
+          />
+          <textarea
+            class="border border-gray-300 bg-transparent p-2 rounded w-full"
+            placeholder="Your Message"
+          ></textarea>
+
+          <button
+            class="bg-[#38164d] hover:bg-[#E49210] text-white font-semibold py-2 px-6 rounded"
+          >
+            SEND
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- footer -------------------------------------------------- -->
+  </body>
+</html>

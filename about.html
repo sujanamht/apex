@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APEX Worldwide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <style>
+      * {
+        font-family: "Inter Tight", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+      h2 {
+        font-family: "Content";
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- Top Bar -->
+    <div class="bg-[#38164d]">
+      <div
+        class="md:mx-20 text-white text-xs py-2 flex justify-center space-x-4 md:justify-between"
+      >
+        <div class="space-x-4">
+          <a href="mailto:info@apexparcel.com" class="  "
+            ><i class="fas fa-envelope"></i>
+            <span class="hidden md:inline ml-1"> info@apexparcel.com</span></a
+          >
+          <a href="tel:" class="  "
+            ><i class="fas fa-phone"></i>
+            <span class="hidden md:inline ml-1"> +977 9800000000</span></a
+          >
+          <a
+            href="https://maps.app.goo.gl/kBuSNp1KnFp49yAZA"
+            target="_blank"
+            class=" "
+            ><i class="fa-solid fa-location-dot"></i>
+            <span class="hidden md:inline ml-1"> Durbarmarg, Kathmandu</span>
+          </a>
+        </div>
+        <div class="space-x-4 -ml-20">
+          <a
+            href="https://www.facebook.com/"
+            class="rounded text-white hover:text-blue-400"
+          >
+            <i class="fab fa-facebook fa-lg"></i>
+          </a>
+          <a href="#" class="rounded text-white hover:text-blue-400"
+            ><i class="fab fa-linkedin fa-lg"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -------------------------------------------------- -->
+    <nav
+      class="mx-6 md:mx-20 relative py-3 flex justify-between items-center bg-white"
+    >
+      <a href="index.html">
+        <div
+          class="text-xl md:text-3xl py-2 font-semibold hover:text-[#E49210]"
+        >
+          <img
+            src="logo.png
+        "
+            class="h-16"
+            alt="logo"
+          /></div
+      ></a>
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex space-x-8 text-xl">
+        <li><a href="index.html" class="hover:text-[#E49210]">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#E49210]">About Us</a></li>
+        <li><a href="blog.html" class="hover:text-[#E49210]">Services</a></li>
+        <li><a href="contact.html" class="hover:text-[#E49210]">Contact</a></li>
+        <li><a href="contact.html" class="hover:text-[#E49210]">Login</a></li>
+      </ul>
+
+      <!-- Hamburger Menu for Small Screens -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg
+          class="w-8 h-8 text-gray-800"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Pop-up Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed z-20 inset-0 bg-[#38164d] flex justify-center hidden"
+    >
+      <div class="bg-white p-6 my-16 w-4/5">
+        <button
+          id="close-menu"
+          class="absolute top-4 right-4 text-white text-5xl"
+        >
+          &times;
+        </button>
+        <ul class="space-y-6 text-xl font-bold">
+          <li>
+            <a href="index.html" class="block hover:text-[#E49210]">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="block hover:text-[#E49210]">About Us</a>
+          </li>
+          <li>
+            <a href="blog.html" class="block hover:text-[#E49210]">Services</a>
+          </li>
+          <li>
+            <a href="contact.html" class="block hover:text-[#E49210]"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a href="contact.html" class="block hover:text-[#E49210]">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- about us ----------------------------------------------------- -->
+    <div
+      class="relative h-60 w-full bg-[url('./about.png')] bg-cover bg-center flex items-center justify-center"
+    >
+      <!-- Black Overlay -->
+      <div
+        class="absolute inset-0 bg-black bg-opacity-65 flex justify-center items-end"
+      >
+        <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-14 text-white">
+          ABOUT US
+        </h2>
+      </div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <section class="my-10 flex justify-center items-center">
+      <div class="mx-10 md:mx-20 text-md items-center flex justify-center">
+        <div class="rounded-lg">
+          <h2 class="text-3xl md:text-5xl font-bold mt-6 mb-12">
+            APEX Worldwide Express
+          </h2>
+          <p
+            class="text-sm md:text-md w-full text-gray-700 text-justify leading-relaxed"
+          >
+            Since 1995, APEX Worldwide Express has been a trusted name in global
+            logistics, providing secure, reliable, and customized shipping
+            solutions. What started as a family-driven business in Nepal has
+            expanded into an extensive international network, with key
+            operations in India, Singapore, and beyond. Our strength lies in
+            combining global reach with local expertise, ensuring smooth and
+            efficient air, sea, and road freight services tailored to the
+            diverse needs of individuals and businesses. With a deep
+            understanding of international logistics and regulations, we
+            navigate complex shipping processes with ease, offering
+            cost-effective, high-security, and timely deliveries across the
+            world. We believe in complete transparency and seamless
+            communication, keeping our customers informed with real-time
+            tracking and proactive updates, ensuring that every shipment is
+            handled with the utmost care and precision.
+          </p>
+
+          <p class="mt-2 text-gray-700 text-justify leading-relaxed">
+            At APEX, we are driven by innovation and customer satisfaction. Our
+            cutting-edge technology enhances security, efficiency, and
+            visibility, but we never lose sight of the human connection that
+            builds long-term trust. We take pride in our unwavering reliability,
+            ensuring that every shipment, no matter how complex, reaches its
+            destination on time and intact. More than just a logistics provider,
+            we view ourselves as partners to our customers, delivering
+            personalized service that goes beyond expectations. Additionally, we
+            are committed to sustainability, minimizing our environmental impact
+            through eco-friendly logistics practices, optimized transport
+            routes, and responsible operations.
+          </p>
+
+          <p class="mt-2 text-gray-700 text-justify leading-relaxed">
+            At APEX Worldwide Express, we don’t just move shipments—we connect
+            businesses, bridge borders, and deliver trust with every package we
+            handle.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Our Core, Vision, Mission & Goal! -------------------------------------- -->
+    <section class="py-12 bg-[#38164d]/5 text-md">
+      <div class="text-3xl md:text-5xl font-bold">
+        <h2 class="ml-10 md:ml-20">Our Core, Vision, Mission & Goal!</h2>
+      </div>
+      <div class="mx-10 md:mx-20">
+        <!-- Core Values -->
+        <div
+          class="bg-white shadow-lg rounded-lg p-8 my-10 border-l-4 border-[#E49210] hover:scale-105 transition duration-300"
+        >
+          <h3 class="text-2xl font-bold mb-4 flex items-center">
+            <i class="fas fa-heart text-[#E49210] mr-2"></i> Core Values
+          </h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>
+              We believe in treating our customers with respect and trust.
+            </li>
+            <li>
+              We grow through creativity, innovation, and a commitment to
+              excellence.
+            </li>
+            <li>
+              We uphold integrity, honesty, and business ethics in all our
+              operations.
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- Vision -->
+          <div
+            class="bg-white shadow-lg rounded-lg p-8 border-l-4 border-[#38164d] hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-bold mb-2 flex items-center">
+              <i class="fas fa-eye text-[#38164d] mr-2"></i> Vision
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              Be **Asia’s leading Express & E-Commerce fulfillment provider**,
+              delivering excellence and innovation in logistics solutions.
+            </p>
+          </div>
+
+          <!-- Mission -->
+          <div
+            class="bg-white shadow-lg rounded-lg p-8 border-l-4 border-[#38164d] hover:scale-105 transition duration-300"
+          >
+            <h3 class="text-2xl font-bold mb-2 flex items-center">
+              <i class="fas fa-bullseye text-[#38164d] mr-2"></i> Mission
+            </h3>
+            <p class="text-gray-700 leading-relaxed">
+              To constantly **anticipate, innovate, interact, and respond** to
+              customer needs, ensuring we surpass expectations with reliable and
+              efficient logistics services.
+            </p>
+          </div>
+        </div>
+
+        <!-- Goals -->
+        <div
+          class="bg-white shadow-lg rounded-lg p-8 mt-10 border-l-4 border-[#E49210] hover:scale-105 transition duration-300"
+        >
+          <h3 class="text-2xl font-bold mb-4 flex items-center">
+            <i class="fas fa-flag-checkered text-[#E49210] mr-2"></i> Goals
+          </h3>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>
+              To establish **APEX as a leader** in global logistics, ensuring
+              reliability and efficiency.
+            </li>
+            <li>
+              To continuously **innovate in express and e-commerce logistics**,
+              setting industry standards.
+            </li>
+            <li>
+              To build a strong **customer-centric logistics network** that
+              adapts to evolving market needs.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- our commitments --------------------------------- -->
+    <section class="py-12 text-md">
+      <div class="text-3xl md:text-5xl font-bold">
+        <h2 class="ml-10 md:ml-20">Our Commitment</h2>
+      </div>
+
+      <div class="mx-10 md:mx-20 grid md:grid-cols-2 gap-4 my-12">
+        <!-- Left Column -->
+        <div class="space-y-4 text-end">
+          <!-- Global Reach -->
+          <div
+            class="flex justify-end items-start space-x-4 p-5 hover:bg-[#38164d]/10 bg-[#38164d]/5"
+          >
+            <div>
+              <h3 class="font-semibold text-xl py-2">
+                Global Reach, Local Expertise
+              </h3>
+              <p class="text-gray-500 text-xs">
+                With a network spanning continents, we have dedicated teams in
+                key locations like India, Singapore, and Nepal. Our franchises
+                ensure seamless shipping with deep regional expertise.
+              </p>
+            </div>
+            <i class="fas fa-globe text-[#38164d] text-4xl p-3"></i>
+          </div>
+
+          <!-- Tailored Solutions -->
+          <div
+            class="flex items-start space-x-4 p-5 hover:bg-[#38164d]/10 bg-[#38164d]/5"
+          >
+            <div>
+              <h3 class="font-semibold text-xl py-2">
+                Tailored Solutions for Every Need
+              </h3>
+              <p class="text-gray-500 text-xs">
+                Whether it’s urgent documents, sensitive cargo, or oversized
+                freight, we work closely with you to design efficient,
+                cost-effective shipping plans.
+              </p>
+            </div>
+            <i class="fas fa-box-open text-[#38164d] text-4xl p-3"></i>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-4 text-start">
+          <!-- Transparency -->
+          <div
+            class="flex items-start space-x-4 p-5 hover:bg-[#38164d]/10 bg-[#38164d]/5"
+          >
+            <i class="fas fa-eye text-[#38164d] text-4xl p-3"></i>
+            <div>
+              <h3 class="font-semibold text-xl py-2">
+                Seamless Communication & Transparency
+              </h3>
+              <p class="text-gray-500 text-xs">
+                We keep you informed with real-time tracking and proactive
+                updates, ensuring you always know where your shipment is.
+              </p>
+            </div>
+          </div>
+
+          <!-- Technology -->
+          <div
+            class="flex items-start space-x-4 p-5 hover:bg-[#38164d]/10 bg-[#38164d]/5"
+          >
+            <i class="fas fa-microchip text-[#38164d] text-4xl p-3"></i>
+            <div>
+              <h3 class="font-semibold text-xl py-2">
+                Technology That Empowers
+              </h3>
+              <p class="text-gray-500 text-xs">
+                Leveraging cutting-edge technology, we enhance security,
+                efficiency, and visibility while maintaining a human touch.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Column -->
+        <div class="space-y-4 text-end">
+          <!-- Reliability -->
+          <div
+            class="flex justify-end items-start space-x-4 p-5 hover:bg-[#38164d]/10 bg-[#38164d]/5"
+          >
+            <div>
+              <h3 class="font-semibold text-xl py-2">Unwavering Reliability</h3>
+              <p class="text-gray-500 text-xs">
+                No matter the destination or challenge, we ensure that your
+                shipment reaches securely and on time.
+              </p>
+            </div>
+            <i class="fas fa-shield-alt text-[#38164d] text-4xl p-3"></i>
+          </div>
+
+          <!-- Personalized Service -->
+          <div
+            class="flex items-start space-x-4 p-5 hover:bg-[#38164d]/10 bg-[#38164d]/5"
+          >
+            <div>
+              <h3 class="font-semibold text-xl py-2">Personalized Service</h3>
+              <p class="text-gray-500 text-xs">
+                You’re not just a customer; you’re a partner. We take the time
+                to understand your needs and exceed expectations.
+              </p>
+            </div>
+            <i class="fas fa-user-check text-[#38164d] text-4xl p-3"></i>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-4 text-start">
+          <!-- Sustainability -->
+          <div
+            class="flex items-start space-x-4 p-5 hover:bg-[#38164d]/10 bg-[#38164d]/5"
+          >
+            <i class="fas fa-leaf text-[#38164d] text-4xl p-3"></i>
+            <div>
+              <h3 class="font-semibold text-xl py-2">Sustainable Practices</h3>
+              <p class="text-gray-500 text-xs">
+                We’re committed to minimizing our environmental impact while
+                ensuring seamless door-to-door delivery worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our team ----------------- -->
+    <section class="py-12 text-md bg-[#38164d]/5">
+      <div class="text-3xl md:text-5xl font-bold">
+        <h2 class="ml-10 md:ml-20">Our Team</h2>
+      </div>
+      <div
+        class="mx-10 md:mx-20 my-10 grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <!-- team member -1 --------------------------------- -->
+        <div
+          class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col justify-between border-b-2 border-[#38164d]"
+        >
+          <img
+            src="team.png"
+            alt="Blog Image"
+            class="w-full h-1/2 p-auto object-cover transition duration-300 hover:scale-110"
+          />
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">CA. Biraj Acharya</h3>
+              <p class="text-gray-600 text-sm">Partner & Review Partner</p>
+            </div>
+
+            <p class="text-gray-500 my-4">
+              A Chartered Accountant with 13 years of experience in corporate
+              credit, risk assessment, and financial feasibility analysis.
+            </p>
+            <div>
+              <p class="text-gray-700">
+                <i class="fas fa-envelope"></i>
+                <a
+                  href="mailto:birajacharya@gmail.com"
+                  class="hover:text-[#E49210] hover:underline"
+                >
+                  birajacharya@gmail.com</a
+                >
+              </p>
+              <p class="text-gray-700">
+                <i class="fas fa-phone"></i>
+                <a
+                  href="tel:+9779801912832"
+                  class="hover:text-[#E49210] hover:underline"
+                  >+977 9801912832</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- team member -2 --------------------------------- -->
+        <div
+          class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col border-b-2 border-[#38164d]"
+        >
+          <img
+            src="team1.jpg"
+            alt="Blog Image"
+            class="w-full h-1/2 p-auto object-cover transition duration-300 hover:scale-110"
+          />
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">CA. Bibek Panthee</h3>
+              <p class="text-gray-600 text-sm">Partner & Engagement Partner</p>
+            </div>
+            <p class="text-gray-500 my-4">
+              A Chartered Accountant with 7 years of experience in assurance,
+              risk management, and financial reporting standards convergence.
+            </p>
+            <div>
+              <p class="mt-2 text-gray-700">
+                <i class="fas fa-envelope"></i>
+                <a
+                  href="mailto:bibek.panthee@gmail.com"
+                  class="hover:text-[#E49210] hover:underline"
+                  >bibek.panthee@gmail.com</a
+                >
+              </p>
+              <p class="text-gray-700">
+                <i class="fas fa-phone"></i>
+                <a
+                  href="tel:+9779817044899"
+                  class="hover:text-[#E49210] hover:underline"
+                  >+977 9817044899</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- team member -3 --------------------------------- -->
+        <div
+          class="blog-post bg-white shadow-lg rounded-lg overflow-hidden h-full flex flex-col border-b-2 border-[#38164d]"
+        >
+          <img
+            src="team.png"
+            alt="Blog Image"
+            class="w-full h-1/2 p-auto object-cover transition duration-300 hover:scale-110"
+          />
+          <div class="p-6 flex-grow flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">CA. Biraj Acharya</h3>
+              <p class="text-gray-600 text-sm">Partner & Review Partner</p>
+            </div>
+
+            <p class="text-gray-500 my-4">
+              A Chartered Accountant with 13 years of experience in corporate
+              credit, risk assessment, and financial feasibility analysis.
+            </p>
+            <div>
+              <p class="text-gray-700">
+                <i class="fas fa-envelope"></i>
+                <a
+                  href="mailto:birajacharya@gmail.com"
+                  class="hover:text-[#E49210] hover:underline"
+                >
+                  birajacharya@gmail.com</a
+                >
+              </p>
+              <p class="text-gray-700">
+                <i class="fas fa-phone"></i>
+                <a
+                  href="tel:+9779801912832"
+                  class="hover:text-[#E49210] hover:underline"
+                  >+977 9801912832</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
